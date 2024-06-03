@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg">
     <defs>
+        <!-- 18 -->
+        <symbol id="icon-arrow-right" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 5H18.5M18.5 5L15 1M18.5 5L15 9.5" stroke="currentColor" />
+        </symbol>
         <!-- 20x20 -->
         <symbol id="icon-cross_20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
             <path stroke="currentColor" stroke-linecap="round" d="m3 3.376 7 7m7 7-7-7m7-7-7 7m-7 7 7-7" />
         </symbol>
+        <symbol id="icon-star_20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.87897 1.62402C9.87897 6.52775 5.90373 10.503 1 10.503C5.90373 10.503 9.87897 14.4782 9.87897 19.382C9.87897 14.4782 13.8542 10.503 18.7579 10.503C13.8542 10.503 9.87897 6.52775 9.87897 1.62402Z"
+                fill="currentColor" />
+        </symbol>
+
         <!-- 24x24 -->
         <symbol id="icon-hamburger_24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M5 16h15M5 8h15" />
