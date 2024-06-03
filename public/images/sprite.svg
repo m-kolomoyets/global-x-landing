@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- 20x20 -->
+        <symbol id="icon-cross_20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+            <path stroke="currentColor" stroke-linecap="round" d="m3 3.376 7 7m7 7-7-7m7-7-7 7m-7 7 7-7" />
+        </symbol>
+        <!-- 24x24 -->
+        <symbol id="icon-hamburger_24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M5 16h15M5 8h15" />
+        </symbol>
+        <!-- 32x32 -->
+        <symbol id="icon-arrows-cross_32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path fill="currentColor"
+                d="m16.3334 10.6797-7.3333-7.68h14.6666l-7.3333 7.68ZM11 15.7198l-8-7.04v14.08l8-7.04ZM21.6667 15.7197l8 7.04v-14.08l-8 7.04ZM16.3333 20.7603l7.3334 7.68H9l7.3333-7.68Z" />
+        </symbol>
+        <symbol id="icon-arows-diagonal_32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path fill="currentColor" d="M15.975 15.9747 27 16.2093 16.2096 27l-.2346-11.0253Z" />
+            <path fill="currentColor" d="M16.025 16.0253 5 15.7907 15.7904 5l.2346 11.0253Z" />
+        </symbol>
+        <symbol id="icon-arrows-outer_32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path fill="currentColor" d="m16.3333 1 7.3334 7.68H9L16.3333 1ZM1 15.7198l8-7.04v14.08l-8-7.04Z" />
+            <path fill="currentColor"
+                d="m31.6667 15.7198-8-7.04v14.08l8-7.04ZM16.3333 30.4399l7.3334-7.68H9l7.3333 7.68Z" />
+        </symbol>
+        <symbol id="icon-arrows-triangle_32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path fill="currentColor"
+                d="m15.75 5 6.875 11H8.875L15.75 5ZM22.625 16 29.5 27H15.75l6.875-11ZM8.875 16l6.875 11H2l6.875-11Z" />
+        </symbol>
+        <symbol id="icon-arrows-two-top_32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path fill="currentColor" d="m15.5 18 7.5 8H8l7.5-8ZM15.5 6 27 18H4L15.5 6Z" />
+        </symbol>
+    </defs>
+</svg>
