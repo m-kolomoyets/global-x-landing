@@ -1,0 +1,13 @@
+:root {
+    /* Focus */
+    --ring-width: 2px;
+    --ring-color: rgb(0, 126, 244);
+    --ring-offset-shadow: 0 0 0 0 #ffffff;
+    --ring-shadow: 0 0 0 var(--ring-width) var(--ring-color);
+
+    /* Scrollbar */
+    --scrollbar-size: 6px;
+    --scrollbar-track-color: rgb(223, 223, 223);
+    --scrollbar-thumb-color: rgb(175, 175, 175);
+    --scrollbar-thumb-color-hover: rgb(116 130 144);
+}
