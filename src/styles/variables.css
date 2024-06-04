@@ -48,4 +48,12 @@
     --scrollbar-track-color: var(--color-grey-violet-100);
     --scrollbar-thumb-color: var(--color-grey-violet-500);
     --scrollbar-thumb-color-hover: var(--color-grey-violet-600);
+
+    /* === Gradients === */
+    --gradient-primary: linear-gradient(to bottom right, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) bottom right /
+            50% 50% no-repeat,
+        linear-gradient(to bottom left, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) bottom left / 50% 50%
+            no-repeat,
+        linear-gradient(to top left, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) top left / 50% 50% no-repeat,
+        linear-gradient(to top right, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) top right / 50% 50% no-repeat;
 }

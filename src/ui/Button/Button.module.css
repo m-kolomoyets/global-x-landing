@@ -29,3 +29,9 @@
 .base:active {
     color: var(--color-blue-200);
 }
+
+@media screen and (max-width: 479px) {
+    .base {
+        padding: 1rem 1.25rem;
+    }
+}

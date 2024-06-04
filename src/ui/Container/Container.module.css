@@ -1,0 +1,14 @@
+.wrap {
+    --container-width: 80rem;
+
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding-inline: 1.25rem;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        padding-inline: 1rem;
+    }
+}

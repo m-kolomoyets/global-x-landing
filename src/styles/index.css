@@ -17,6 +17,11 @@ body {
     overflow-y: hidden;
 }
 
+.full-height {
+    min-height: 100svh;
+    min-height: 100vh;
+}
+
 .visually-hidden {
     display: inline-block;
     position: absolute;
