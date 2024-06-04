@@ -13,7 +13,7 @@ const SideTitleSection: React.FC<SideTitleSectionProps> = ({
     subtitle,
 }) => {
     return (
-        <Container className={clsx(s.wrap, className)} asChild>
+        <Container className={clsx(s.wrap, className)} size="sm" asChild>
             <section data-view={view}>
                 <header className={s['title-wrap']}>
                     <Typography className={s.title} variant="title-h2" asChild>

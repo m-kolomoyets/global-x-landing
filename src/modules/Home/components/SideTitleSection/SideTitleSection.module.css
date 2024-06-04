@@ -1,6 +1,4 @@
 .wrap {
-    --container-width: 70rem;
-
     display: flex;
     flex-direction: row;
     align-items: center;

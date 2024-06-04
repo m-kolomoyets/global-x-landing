@@ -1,0 +1,29 @@
+.wrap {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.875rem;
+    background-color: var(--color-grey-violet-800);
+    border: 1px solid var(--color-grey-violet-700);
+    border-radius: 1.25rem;
+    height: 100%;
+}
+
+.icon-wrap {
+    margin-bottom: 1rem;
+    margin-top: -1px;
+}
+
+.icon {
+    color: var(--color-blue-100);
+}
+
+.title {
+    color: var(--color-gray-alpha-50);
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        padding-bottom: 1.95rem;
+        padding-left: 1.9rem;
+    }
+}

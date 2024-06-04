@@ -2,6 +2,7 @@ import HiroSection from './components/HiroSection';
 import RevolutionizeFinancialExperienceSection from './components/RevolutionizeFinancialExperienceSection';
 import AllInOneFinancialEcosystemSection from './components/AllInOneFinancialEcosystemSection';
 import DesignedToCaterFinancialNeedsSection from './components/DesignedToCaterFinancialNeedsSection';
+import CoinIntroductionSection from './components/CoinIntroductionSection';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
                 <AllInOneFinancialEcosystemSection />
                 <DesignedToCaterFinancialNeedsSection />
             </div>
+            <CoinIntroductionSection />
         </div>
     );
 };

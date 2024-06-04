@@ -7,6 +7,10 @@
     padding-inline: 1.25rem;
 }
 
+.wrap.sm {
+    --container-width: 70rem;
+}
+
 @media screen and (max-width: 767px) {
     .wrap {
         padding-inline: 1rem;
