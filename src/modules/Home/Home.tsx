@@ -4,6 +4,7 @@ import AllInOneFinancialEcosystemSection from './components/AllInOneFinancialEco
 import DesignedToCaterFinancialNeedsSection from './components/DesignedToCaterFinancialNeedsSection';
 import CoinIntroductionSection from './components/CoinIntroductionSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
+import TeamSection from './components/TeamSection';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
             </div>
             <CoinIntroductionSection />
             <WhyChooseUsSection />
+            <TeamSection />
         </div>
     );
 };
