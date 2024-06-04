@@ -1,0 +1,53 @@
+.wrap {
+    --icon-wrap-size: 3rem;
+
+    display: flex;
+    gap: 1.625rem;
+    position: relative;
+}
+
+.icon-wrap {
+    margin-top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: var(--icon-wrap-size);
+    height: var(--icon-wrap-size);
+    border: 1px solid var(--color-grey-violet-700);
+    background-color: var(--color-grey-violet-800);
+    border-radius: 50%;
+    color: var(--color-blue-100);
+}
+
+.wrap:not(:last-of-type) .icon-wrap::after {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    top: var(--icon-wrap-size);
+    height: calc(100% + var(--icon-wrap-size) + 0.5rem);
+    width: 1px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: %234B4459; stroke-width: 4; stroke-dasharray: 5 5'/></svg>");
+}
+
+.icon {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+
+.content {
+    margin-top: 0.5rem;
+}
+
+.name {
+    margin-bottom: 0.75rem;
+}
+
+.period,
+.description {
+    color: var(--color-gray-alpha-50);
+}
+
+.period {
+    margin-bottom: 1.25rem;
+}

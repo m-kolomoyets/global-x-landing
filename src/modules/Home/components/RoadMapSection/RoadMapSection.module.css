@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    gap: 3.5625rem;
+    padding-block: 6.25rem;
+    padding-top: 6.1875rem;
+}
+
+.left,
+.right {
+    flex: 1 1 30.9375rem;
+    max-width: 30.9375rem;
+}
+
+.left {
+    padding-right: 1.5rem;
+}
+
+.right {
+    flex-basis: 25.5rem;
+    max-width: 25.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.375rem;
+}
+
+.title {
+    width: 90%;
+    position: sticky;
+    top: 50%;
+}

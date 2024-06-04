@@ -5,6 +5,7 @@ import DesignedToCaterFinancialNeedsSection from './components/DesignedToCaterFi
 import CoinIntroductionSection from './components/CoinIntroductionSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
 import TeamSection from './components/TeamSection';
+import RoadMapSection from './components/RoadMapSection';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
             <CoinIntroductionSection />
             <WhyChooseUsSection />
             <TeamSection />
+            <RoadMapSection />
         </div>
     );
 };
