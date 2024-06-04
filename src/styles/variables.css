@@ -56,9 +56,9 @@
 
     /* === Scrollbar === */
     --scrollbar-size: 6px;
-    --scrollbar-track-color: var(--color-grey-violet-100);
-    --scrollbar-thumb-color: var(--color-grey-violet-500);
-    --scrollbar-thumb-color-hover: var(--color-grey-violet-600);
+    --scrollbar-track-color: var(--color-grey-violet-600);
+    --scrollbar-thumb-color: var(--color-blue-200);
+    --scrollbar-thumb-color-hover: var(--color-blue-300);
 
     /* === Gradients === */
     --gradient-primary: linear-gradient(to bottom right, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) bottom right /
