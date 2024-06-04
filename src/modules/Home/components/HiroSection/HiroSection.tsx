@@ -1,11 +1,15 @@
 import { memo } from 'react';
-import Typography from '@/ui/Typography';
-import s from './HiroSection.module.css';
-import CallToActionButton from '../CallToActionButton';
-import Container from '@/ui/Container';
+import { useMediaQuery } from '@react-hookz/web';
 import clsx from 'clsx';
+import Typography from '@/ui/Typography';
+import Container from '@/ui/Container';
+import Button from '@/ui/Button';
+import Icon from '@/ui/Icon';
+import s from './HiroSection.module.css';
 
 const HiroSection: React.FC = () => {
+    const isMobile = useMediaQuery('(max-width: 767px)');
+
     return (
         <Container className={clsx(s.wrap, 'full-height')} asChild>
             <section>
@@ -21,7 +25,12 @@ const HiroSection: React.FC = () => {
                         </Typography>
                     </header>
                     <footer className={s.footer}>
-                        <CallToActionButton />
+                        <Button asChild>
+                            <a href="#">
+                                {isMobile ? null : <Icon id="icon-star_20" />}
+                                Join Waitlist
+                            </a>
+                        </Button>
                     </footer>
                     <img className={s.noise} src="/images/noise.webp" alt="background noise" aria-hidden="true" />
                     {/* <span className={s['decor-gradient']} /> */}

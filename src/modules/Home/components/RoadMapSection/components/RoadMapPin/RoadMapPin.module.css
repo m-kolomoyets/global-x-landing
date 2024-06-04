@@ -51,3 +51,17 @@
 .period {
     margin-bottom: 1.25rem;
 }
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        gap: 1.25rem;
+    }
+
+    .name {
+        margin-bottom: 0.5rem;
+    }
+
+    .period {
+        margin-bottom: 0.625rem;
+    }
+}

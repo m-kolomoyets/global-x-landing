@@ -7,6 +7,7 @@ import CoinIntroductionSection from './components/CoinIntroductionSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
 import TeamSection from './components/TeamSection';
 import RoadMapSection from './components/RoadMapSection';
+import JoinWaitlistSection from './components/JoinWaitlistSection';
 import ScrollToTop from './components/ScrollToTop';
 import s from './Home.module.css';
 
@@ -14,19 +15,22 @@ const Home: React.FC = () => {
     const { scrollYProgress } = useScroll();
 
     return (
-        <div className="full-height">
-            <HiroSection />
-            <div className={s['side-sections-wrap']}>
-                <RevolutionizeFinancialExperienceSection />
-                <AllInOneFinancialEcosystemSection />
-                <DesignedToCaterFinancialNeedsSection />
+        <>
+            <div className="full-height">
+                <HiroSection />
+                <div className={s['side-sections-wrap']}>
+                    <RevolutionizeFinancialExperienceSection />
+                    <AllInOneFinancialEcosystemSection />
+                    <DesignedToCaterFinancialNeedsSection />
+                </div>
+                <CoinIntroductionSection />
+                <WhyChooseUsSection />
+                <TeamSection />
+                <RoadMapSection />
+                <JoinWaitlistSection />
             </div>
-            <CoinIntroductionSection />
-            <WhyChooseUsSection />
-            <TeamSection />
-            <RoadMapSection />
             <ScrollToTop scrollProgress={scrollYProgress} />
-        </div>
+        </>
     );
 };
 

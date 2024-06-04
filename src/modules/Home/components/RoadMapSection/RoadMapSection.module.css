@@ -28,3 +28,20 @@
     position: sticky;
     top: 50%;
 }
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        flex-direction: column;
+        padding-block: 3.75rem;
+        gap: 2rem;
+    }
+
+    .left,
+    .right {
+        flex: 1;
+    }
+
+    .right {
+        gap: 5rem;
+    }
+}
