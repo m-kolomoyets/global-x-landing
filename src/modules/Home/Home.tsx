@@ -1,3 +1,4 @@
+import { useScroll } from 'framer-motion';
 import HiroSection from './components/HiroSection';
 import RevolutionizeFinancialExperienceSection from './components/RevolutionizeFinancialExperienceSection';
 import AllInOneFinancialEcosystemSection from './components/AllInOneFinancialEcosystemSection';
@@ -6,9 +7,12 @@ import CoinIntroductionSection from './components/CoinIntroductionSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
 import TeamSection from './components/TeamSection';
 import RoadMapSection from './components/RoadMapSection';
+import ScrollToTop from './components/ScrollToTop';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
+    const { scrollYProgress } = useScroll();
+
     return (
         <div className="full-height">
             <HiroSection />
@@ -21,6 +25,7 @@ const Home: React.FC = () => {
             <WhyChooseUsSection />
             <TeamSection />
             <RoadMapSection />
+            <ScrollToTop scrollProgress={scrollYProgress} />
         </div>
     );
 };
