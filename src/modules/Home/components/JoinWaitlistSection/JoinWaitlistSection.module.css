@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 33.75rem;
+    max-width: 34.375rem;
 }
 
 .header {
@@ -43,6 +43,7 @@
 
 .form {
     display: flex;
+    align-items: flex-start;
     gap: 1rem;
     width: 100%;
     max-width: 26.5625rem;
@@ -51,6 +52,10 @@
 
 .input {
     flex: 1;
+}
+
+.cta {
+    flex-grow: 0;
 }
 
 @media screen and (max-width: 767px) {

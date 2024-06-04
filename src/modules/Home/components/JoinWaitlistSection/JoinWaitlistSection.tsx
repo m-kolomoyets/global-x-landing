@@ -1,10 +1,11 @@
 import { memo } from 'react';
-import Container from '@/ui/Container';
-import s from './JoinWaitlistSection.module.css';
-import Typography from '@/ui/Typography';
-import Button from '@/ui/Button';
-import Icon from '@/ui/Icon';
 import { useMediaQuery } from '@react-hookz/web';
+import Typography from '@/ui/Typography';
+import Container from '@/ui/Container';
+import Button from '@/ui/Button';
+import Input from '@/ui/Input';
+import Icon from '@/ui/Icon';
+import s from './JoinWaitlistSection.module.css';
 
 const JoinWaitlistSection: React.FC = () => {
     const isMobile = useMediaQuery('(max-width: 767px)');
@@ -26,8 +27,8 @@ const JoinWaitlistSection: React.FC = () => {
                             </Typography>
                         </header>
                         <form className={s.form}>
-                            <input className={s.input} type="email" placeholder="Enter email" />
-                            <Button>
+                            <Input className={s.input} type="email" autoComplete="email" placeholder="Enter email" />
+                            <Button className={s.cta}>
                                 {isMobile ? null : <Icon id="icon-star_20" />}
                                 {isMobile ? 'Join' : 'Join Waitlist'}
                             </Button>

@@ -37,6 +37,17 @@
     --color-blue-800: hsla(198deg, 93%, 12%, 1);
     --color-blue-900: hsla(197deg, 93%, 6%, 1);
 
+    /* Red */
+    --color-red-100: hsla(0deg, 63%, 95%, 1);
+    --color-red-200: hsla(0deg, 62%, 90%, 1);
+    --color-red-300: hsla(0deg, 63%, 84%, 1);
+    --color-red-400: hsla(0deg, 62%, 79%, 1);
+    --color-red-500: hsla(0deg, 61%, 74%, 1);
+    --color-red-600: hsla(0deg, 61%, 69%, 1);
+    --color-red-700: hsla(0deg, 61%, 63%, 1);
+    --color-red-800: hsla(0deg, 62%, 58%, 1);
+    --color-red-900: hsla(0deg, 62%, 53%, 1);
+
     /* === Focus === */
     --ring-width: 2px;
     --ring-color: var(--color-blue-100);
