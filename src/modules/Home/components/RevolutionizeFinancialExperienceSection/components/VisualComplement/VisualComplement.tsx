@@ -1,7 +1,7 @@
 import { memo } from 'react';
-import s from './VisualComplement.module.css';
-import Icon from '@/ui/Icon';
 import clsx from 'clsx';
+import Icon from '@/ui/Icon';
+import s from './VisualComplement.module.css';
 
 const VisualComplement: React.FC = () => {
     return (

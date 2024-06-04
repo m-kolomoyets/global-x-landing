@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import SideTitleSection from '../SideTitleSection';
+import VisualComplement from './components/VisualComplement';
 import s from './AllInOneFinancialEcosystemSection.module.css';
 
 const AllInOneFinancialEcosystemSection: React.FC = () => {
@@ -10,7 +11,7 @@ const AllInOneFinancialEcosystemSection: React.FC = () => {
             subtitle="Experience the stability and versatility of GPSC, our revolutionary stablecoin fully backed by British Pound (GBP) cash reserves."
             view="reverse"
         >
-            hello
+            <VisualComplement />
         </SideTitleSection>
     );
 };

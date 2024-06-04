@@ -155,18 +155,23 @@
 }
 
 @media screen and (max-width: 479px) {
-    .title {
-        padding-inline: 1rem;
-        margin-bottom: 1rem;
+    .wrap {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.75rem !important;
     }
 
     .inner {
-        padding-top: 3.75rem;
+        padding-top: 2.75rem;
         padding-inline: 1rem;
     }
 
     .header {
         margin-bottom: 2rem;
+    }
+
+    .title {
+        padding-inline: 1rem;
+        margin-bottom: 1rem;
     }
 
     .decor-gradient[data-position="bottom-left"] {

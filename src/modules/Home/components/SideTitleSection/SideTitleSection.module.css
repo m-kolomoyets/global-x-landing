@@ -40,3 +40,9 @@
         max-width: revert;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .title {
+        line-height: 111%;
+    }
+}
