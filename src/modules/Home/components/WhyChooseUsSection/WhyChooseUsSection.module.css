@@ -1,0 +1,21 @@
+.wrap {
+    min-height: 44.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-violet-800);
+    border-radius: 1.25rem;
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

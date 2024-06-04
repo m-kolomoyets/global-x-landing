@@ -3,6 +3,7 @@ import RevolutionizeFinancialExperienceSection from './components/RevolutionizeF
 import AllInOneFinancialEcosystemSection from './components/AllInOneFinancialEcosystemSection';
 import DesignedToCaterFinancialNeedsSection from './components/DesignedToCaterFinancialNeedsSection';
 import CoinIntroductionSection from './components/CoinIntroductionSection';
+import WhyChooseUsSection from './components/WhyChooseUsSection';
 import s from './Home.module.css';
 
 const Home: React.FC = () => {
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
                 <DesignedToCaterFinancialNeedsSection />
             </div>
             <CoinIntroductionSection />
+            <WhyChooseUsSection />
         </div>
     );
 };
