@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import SideTitleSection from '../SideTitleSection';
 import s from './RevolutionizeFinancialExperienceSection.module.css';
+import VisualComplement from './components/VisualComplement';
 
 const RevolutionizeFinancialExperienceSection: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const RevolutionizeFinancialExperienceSection: React.FC = () => {
             title={<>Revolutionize Your&nbsp;Financial&nbsp;Experience</>}
             subtitle="Join the future of finance with GlobalX"
         >
-            hello
+            <VisualComplement />
         </SideTitleSection>
     );
 };

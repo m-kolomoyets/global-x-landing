@@ -1,0 +1,110 @@
+.wrap {
+    position: relative;
+    height: 16.4375rem;
+    width: 100%;
+    padding: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-color: var(--color-grey-violet-900);
+    border: 1px solid var(--color-grey-violet-700);
+    overflow: hidden;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-left: -0.5rem;
+}
+
+.element {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.element .icon {
+    position: absolute;
+    opacity: 0.62;
+}
+
+.element.left .icon {
+    margin-left: -0.125rem;
+}
+
+.element.center {
+    margin-left: -0.125rem;
+}
+
+.arrow-wrap {
+    --arrow-wrap-size: 3rem;
+
+    flex-shrink: 0;
+    width: var(--arrow-wrap-size);
+    height: var(--arrow-wrap-size);
+    background-color: var(--color-grey-violet-900);
+    border: 1px solid var(--color-grey-violet-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-blue-100);
+}
+
+.arrow-wrap .icon {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.arrow-wrap.left {
+    transform: rotateZ(-90deg);
+    margin-left: -0.5rem;
+}
+
+.arrow-wrap.right {
+    transform: rotateZ(90deg);
+    margin-left: -0.5rem;
+    margin-right: -0.675rem;
+}
+
+.gradient-decor {
+    --gradient-circle-size: 34.0625rem;
+
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: var(--gradient-circle-size);
+    height: var(--gradient-circle-size);
+    background: var(--gradient-blurred-circle);
+    filter: blur(15.85px);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 499px) {
+    .arrow-wrap {
+        --arrow-wrap-size: 2.4375rem;
+    }
+
+    .element.left .icon,
+    .element.right .icon {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+
+    .element.center .icon {
+        width: 2.6875rem !important;
+        height: 2.1875rem !important;
+    }
+
+    .arrow-wrap .icon {
+        width: 0.75rem !important;
+        height: 0.75rem !important;
+    }
+
+    .gradient-decor {
+        left: -25%;
+        top: 25%;
+    }
+}

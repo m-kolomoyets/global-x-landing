@@ -5,7 +5,15 @@ const Icon: React.ForwardRefRenderFunction<SVGSVGElement, IconProps> = ({ id, cl
     const size = id.split('_')?.[1];
 
     return (
-        <svg ref={ref} width={size} height={size} className={className} {...rest}>
+        <svg
+            ref={ref}
+            style={{
+                width: size ? `${size}px` : 'auto',
+                height: size ? `${size}px` : 'auto',
+            }}
+            className={className}
+            {...rest}
+        >
             <use href={`/images/sprite.svg#${id}`} />
         </svg>
     );

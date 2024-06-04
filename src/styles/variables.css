@@ -56,4 +56,25 @@
             no-repeat,
         linear-gradient(to top left, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) top left / 50% 50% no-repeat,
         linear-gradient(to top right, #ffffff 1%, #9df3ff 14%, #19b3f5 25%, #0c0221 50%) top right / 50% 50% no-repeat;
+    --gradient-blurred-circle: radial-gradient(
+        300.27% 195.73% at 56.77% 196.77%,
+        #ffffff 0%,
+        #9df3ff 14.23%,
+        #19b3f5 33.22%,
+        #18102a 100%
+    );
+    --gradient-blurred-ameba-1: radial-gradient(
+        183.13% 116.84% at -76.98% 0.04%,
+        #ffffff 0%,
+        #9df3ff 14.23%,
+        #19b3f5 33.22%,
+        #18102a 100%
+    );
+    --gradient-blurred-ameba-2: radial-gradient(
+        216.98% 149.28% at -50.37% -37%,
+        #ffffff 0%,
+        #9df3ff 14.23%,
+        #19b3f5 33.22%,
+        #18102a 100%
+    );
 }
