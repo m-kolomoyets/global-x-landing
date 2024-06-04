@@ -1,0 +1,36 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9.375rem;
+}
+
+.wrap[data-view="reverse"] {
+    flex-direction: row-reverse;
+}
+
+.title-wrap {
+    flex: 0 1 28.375rem;
+    max-width: 28.375rem;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-gray-alpha-50);
+}
+
+.content-wrap {
+    flex: 0 1 28.375rem;
+    max-width: 28.375rem;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

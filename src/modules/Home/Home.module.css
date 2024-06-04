@@ -1,0 +1,14 @@
+.side-sections-wrap {
+    --side-sections-gap: 6.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--side-sections-gap);
+    padding-block: var(--side-sections-gap);
+}
+
+@media screen and (max-width: 479px) {
+    .side-sections-wrap {
+        --side-sections-gap: 3.75rem;
+    }
+}
