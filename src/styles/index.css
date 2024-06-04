@@ -1,6 +1,16 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
+body,
+html {
+    background: var(--color-grey-violet-900);
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: var(--color-white-100);
+}
+
 .lock-scroll-y {
     position: fixed;
     inset: 0;
@@ -19,7 +29,15 @@
     border-width: 0;
 }
 
-body .focus-primary:focus-visible {
+.focus-primary,
+.focus-primary-child,
+.focus-within-primary {
+    transition:
+        box-shadow 0.2s,
+        outline 0.2s;
+}
+
+.focus-primary:focus-visible {
     outline: 2px solid transparent;
     outline-offset: 2px;
     box-shadow:
@@ -28,7 +46,7 @@ body .focus-primary:focus-visible {
         0 0 rgba(0, 0, 0, 0);
 }
 
-body .focus-primary:focus {
+.focus-primary:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
     box-shadow:
@@ -37,7 +55,7 @@ body .focus-primary:focus {
         0 0 rgba(0, 0, 0, 0);
 }
 
-body .focus-within-primary:focus-within {
+.focus-within-primary:focus-within {
     outline: 2px solid transparent;
     outline-offset: 2px;
     box-shadow:
@@ -46,14 +64,14 @@ body .focus-within-primary:focus-within {
         0 0 rgba(0, 0, 0, 0);
 }
 
-body .focus-primary:focus:not(body .focus-primary:focus-visible) {
+.focus-primary:focus:not(.focus-primary:focus-visible) {
     --ring-width: 0;
 
     outline: none;
     box-shadow: none;
 }
 
-body .focus-primary-child {
+.focus-primary-child {
     outline: 2px solid transparent;
     outline-offset: 2px;
     box-shadow:

@@ -1,13 +1,51 @@
 :root {
-    /* Focus */
+    /* === Colors === */
+
+    /* White */
+    --color-white-100: hsla(0deg, 0%, 100%, 1);
+
+    /* Grey violet */
+    --color-grey-violet-100: hsla(260deg, 2%, 70%, 1);
+    --color-grey-violet-200: hsla(257deg, 4%, 63%, 1);
+    --color-grey-violet-300: hsla(258deg, 4%, 55%, 1);
+    --color-grey-violet-400: hsla(257deg, 6%, 47%, 1);
+    --color-grey-violet-500: hsla(261deg, 9%, 39%, 1);
+    --color-grey-violet-600: hsla(260deg, 13%, 31%, 1);
+    --color-grey-violet-700: hsla(260deg, 30%, 16%, 1);
+    --color-grey-violet-800: hsla(258deg, 45%, 11%, 1);
+    --color-grey-violet-900: hsla(259deg, 89%, 7%, 1);
+
+    /* Gray alpha */
+    --color-gray-alpha-50: hsla(0deg, 0%, 100%, 0.6);
+    --color-gray-alpha-100: hsla(0deg, 0%, 100%, 0.4);
+    --color-gray-alpha-200: hsla(257deg, 89%, 7%, 0.1);
+    --color-gray-alpha-300: hsla(257deg, 89%, 7%, 0.2);
+    --color-gray-alpha-400: hsla(257deg, 89%, 7%, 0.3);
+    --color-gray-alpha-500: hsla(257deg, 89%, 7%, 0.4);
+    --color-gray-alpha-600: hsla(257deg, 89%, 7%, 0.5);
+    --color-gray-alpha-700: hsla(257deg, 89%, 7%, 0.6);
+    --color-gray-alpha-800: hsla(257deg, 89%, 7%, 0.7);
+
+    /* Blue */
+    --color-blue-100: hsla(198deg, 92%, 53%, 1);
+    --color-blue-200: hsla(198deg, 92%, 47%, 1);
+    --color-blue-300: hsla(198deg, 91%, 41%, 1);
+    --color-blue-400: hsla(198deg, 92%, 35%, 1);
+    --color-blue-500: hsla(198deg, 92%, 29%, 1);
+    --color-blue-600: hsla(198deg, 92%, 24%, 1);
+    --color-blue-700: hsla(198deg, 91%, 18%, 1);
+    --color-blue-800: hsla(198deg, 93%, 12%, 1);
+    --color-blue-900: hsla(197deg, 93%, 6%, 1);
+
+    /* === Focus === */
     --ring-width: 2px;
-    --ring-color: rgb(0, 126, 244);
-    --ring-offset-shadow: 0 0 0 0 #ffffff;
+    --ring-color: var(--color-blue-100);
+    --ring-offset-shadow: 0 0 0 0 var(--color-white-100);
     --ring-shadow: 0 0 0 var(--ring-width) var(--ring-color);
 
-    /* Scrollbar */
+    /* === Scrollbar === */
     --scrollbar-size: 6px;
-    --scrollbar-track-color: rgb(223, 223, 223);
-    --scrollbar-thumb-color: rgb(175, 175, 175);
-    --scrollbar-thumb-color-hover: rgb(116 130 144);
+    --scrollbar-track-color: var(--color-grey-violet-100);
+    --scrollbar-thumb-color: var(--color-grey-violet-500);
+    --scrollbar-thumb-color-hover: var(--color-grey-violet-600);
 }

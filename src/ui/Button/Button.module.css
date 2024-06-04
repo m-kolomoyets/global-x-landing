@@ -1,0 +1,30 @@
+.wrap {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.base {
+    padding: 0.875rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    color: var(--color-grey-violet-900);
+    background-color: var(--color-white-100);
+    cursor: pointer;
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.base:hover {
+    color: var(--color-blue-100);
+}
+
+.base:active {
+    color: var(--color-blue-200);
+}
