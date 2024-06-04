@@ -1,0 +1,36 @@
+.wrap {
+    display: inline-block;
+    padding: 0.25rem;
+    color: var(--color-white-100);
+    transition:
+        color 0.2s,
+        box-shadow 0.2s;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrap[data-variant="light"] {
+    color: var(--color-gray-alpha-50);
+}
+
+.wrap:hover {
+    color: var(--color-blue-100);
+}
+
+.wrap[data-variant="light"]:hover {
+    color: var(--color-white-100);
+}
+
+.wrap:active {
+    color: var(--color-blue-200);
+}
+
+.wrap[data-variant="light"]:active {
+    color: var(--color-blue-100);
+}
+
+.wrap:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
