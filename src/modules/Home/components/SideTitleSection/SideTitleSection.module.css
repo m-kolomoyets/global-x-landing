@@ -3,15 +3,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 9.375rem;
+    gap: 4.6875rem;
 }
 
 .wrap[data-view="reverse"] {
     flex-direction: row-reverse;
 }
 
-.title-wrap {
+.title-wrap,
+.content-wrap {
     flex: 0 1 28.375rem;
+    width: 100%;
     max-width: 28.375rem;
 }
 
@@ -23,14 +25,15 @@
     color: var(--color-gray-alpha-50);
 }
 
-.content-wrap {
-    flex: 0 1 28.375rem;
-    max-width: 28.375rem;
-}
-
-@media screen and (max-width: 767px) {
-    .wrap {
+@media screen and (max-width: 982px) {
+    .wrap[data-view] {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .title-wrap,
+    .content-wrap {
+        flex: 1 1 100%;
+        max-width: revert;
     }
 }
