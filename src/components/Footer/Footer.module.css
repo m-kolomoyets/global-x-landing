@@ -42,7 +42,9 @@
 .item {
     border: none;
     background-color: transparent;
-    transition: box-shadow 0.2s;
+    transition:
+        box-shadow 0.2s,
+        color 0.2s;
     border-radius: 0.25rem;
 }
 
