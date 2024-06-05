@@ -13,6 +13,7 @@ export const NAV_LINKS: NavLinkItem[] = [
     {
         label: 'Token Info',
         href: 'https://etherscan.io/',
+        isTargetBlank: true,
     },
     {
         label: 'Lite Paper',

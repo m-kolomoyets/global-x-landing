@@ -19,7 +19,13 @@ const Footer: React.FC = () => {
                         {NAV_LINKS.map((link) => {
                             return (
                                 <Link className={s.item} key={link.href} variant="light" asChild>
-                                    <a href={link.href}>{link.label}</a>
+                                    <a
+                                        href={link.href}
+                                        target={link?.isTargetBlank ? '_blank' : undefined}
+                                        rel={link?.isTargetBlank ? 'noopener noreferrer' : undefined}
+                                    >
+                                        {link.label}
+                                    </a>
                                 </Link>
                             );
                         })}
