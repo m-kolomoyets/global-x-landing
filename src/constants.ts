@@ -1,3 +1,4 @@
+import type { Target } from 'framer-motion';
 import type { NavLinkItem } from './types';
 
 /**
@@ -24,3 +25,14 @@ export const NAV_LINKS: NavLinkItem[] = [
         href: '#',
     },
 ];
+
+export const VISUAL_COMPLEMENT_WRAP_VARIANTS: Record<'hidden' | 'visible', Target> = {
+    hidden: {
+        opacity: 0,
+        y: '100px',
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    },
+};

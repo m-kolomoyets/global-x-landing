@@ -21,6 +21,7 @@
 
 .center {
     position: relative;
+    z-index: 5;
 }
 
 .center .decor {
