@@ -12,7 +12,9 @@
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
-    transition: opacity 0.5s;
+    transition:
+        opacity 0.5s,
+        box-shadow 0.2s;
     z-index: -1;
     opacity: 0;
 }

@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useEventListener, useToggle } from '@react-hookz/web';
+import clsx from 'clsx';
 import type { ScrollToTopProps } from './types';
 import { useLocomotiveScrollContext } from '@/context/LocomotiveScrollContext';
 import { ONE_SECOND } from '@/constants';
@@ -27,7 +28,11 @@ const ScrollToTop: React.FC<ScrollToTopProps> = ({ scrollProgress }) => {
     }, [locomotiveScroll]);
 
     return (
-        <button className={s.wrap} onClick={scrollToTopClickHandler} data-state={isActive ? 'active' : 'inactive'}>
+        <button
+            className={clsx(s.wrap, 'focus-primary')}
+            onClick={scrollToTopClickHandler}
+            data-state={isActive ? 'active' : 'inactive'}
+        >
             <svg className={s.progress} width="48" height="48" viewBox="0 0 48 48">
                 <circle cx="24" cy="24" r="21" pathLength="1" className={s.bg} />
                 <motion.circle

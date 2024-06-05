@@ -1,4 +1,5 @@
 import { useScroll } from 'framer-motion';
+import clsx from 'clsx';
 import Header from '@/components/Header';
 import HiroSection from './components/HiroSection';
 import RevolutionizeFinancialExperienceSection from './components/RevolutionizeFinancialExperienceSection';
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <div className="full-height" data-scroll data-scroll-speed="0.5">
+            <div className={clsx(s.wrap, 'full-height')} data-scroll data-scroll-speed="0.5">
                 <Header />
                 <HiroSection />
                 <div className={s['side-sections-wrap']}>

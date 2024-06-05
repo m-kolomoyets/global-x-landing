@@ -49,10 +49,18 @@ const Header: React.FC = () => {
             data-state={isHeaderFilled ? 'filled' : 'default'}
         >
             <Container className={s.container}>
-                <div className={clsx(s['logo-wrap'], 'focus-within-primary')}>
-                    <a className={s.link} href="#">
+                <div className={s['logo-wrap']}>
+                    <button
+                        className={clsx(s.link, 'focus-primary')}
+                        onClick={() => {
+                            locomotiveScroll.scrollTo(0, {
+                                duration: 2,
+                            });
+                            history.pushState(null, '', '#');
+                        }}
+                    >
                         <img className={s.image} src="/images/logo-white.webp" alt="GlobalX" />
-                    </a>
+                    </button>
                 </div>
                 {isMobile ? (
                     <HeaderMobileDialog />
@@ -74,14 +82,14 @@ const Header: React.FC = () => {
                                     );
                                 })}
                                 <Link className={s.item} variant="light" asChild>
-                                    <span
+                                    <button
                                         onClick={() => {
                                             locomotiveScroll.scrollTo('#roadmap');
                                             history.pushState(null, '', '#roadmap');
                                         }}
                                     >
                                         Roadmap
-                                    </span>
+                                    </button>
                                 </Link>
                             </ul>
                         </nav>

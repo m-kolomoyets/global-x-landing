@@ -27,14 +27,26 @@
 .logo-wrap {
     width: 8.9375rem;
     height: 1.875rem;
-    border-radius: 0.25rem;
+}
+
+.link {
+    border: none;
+    background-color: transparent;
     transition: box-shadow 0.2s;
+    border-radius: 0.25rem;
 }
 
 .nav-list {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+.item {
+    border: none;
+    background-color: transparent;
+    transition: box-shadow 0.2s;
+    border-radius: 0.25rem;
 }
 
 @media screen and (max-width: 1255px) {

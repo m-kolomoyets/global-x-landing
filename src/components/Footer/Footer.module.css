@@ -15,6 +15,11 @@
 .logo-wrap {
     width: 8.9375rem;
     height: 1.875rem;
+}
+
+.link {
+    border: none;
+    background-color: transparent;
     border-radius: 0.25rem;
     transition: box-shadow 0.2s;
 }
@@ -34,6 +39,13 @@
     background-color: var(--color-grey-violet-600);
 }
 
+.item {
+    border: none;
+    background-color: transparent;
+    transition: box-shadow 0.2s;
+    border-radius: 0.25rem;
+}
+
 @media screen and (max-width: 767px) {
     .wrap {
         padding-top: 4.375rem;
@@ -47,5 +59,13 @@
     .nav,
     .nav-list {
         flex-direction: column;
+    }
+
+    .split {
+        display: block;
+        width: 3.75rem;
+        flex: 1 1 1px;
+        height: 1px;
+        background-color: var(--color-grey-violet-600);
     }
 }
