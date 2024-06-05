@@ -5,12 +5,25 @@ import { NAV_LINKS, SUPPORT_EMAIL } from '@/constants';
 import Container from '@/ui/Container';
 import Link from '@/ui/Link';
 import s from './Footer.module.css';
+import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
     const { locomotiveScroll } = useLocomotiveScrollContext();
 
     return (
-        <footer className={s.wrap}>
+        <motion.footer
+            className={s.wrap}
+            initial={{
+                opacity: 0,
+            }}
+            whileInView={{
+                opacity: 1,
+            }}
+            transition={{
+                duration: 0.4,
+                delay: 0.6,
+            }}
+        >
             <Container className={s.container}>
                 <div className={clsx(s['logo-wrap'], 'focus-within-primary')}>
                     <a className={s.link} href="#">
@@ -49,7 +62,7 @@ const Footer: React.FC = () => {
                     </Link>
                 </nav>
             </Container>
-        </footer>
+        </motion.footer>
     );
 };
 

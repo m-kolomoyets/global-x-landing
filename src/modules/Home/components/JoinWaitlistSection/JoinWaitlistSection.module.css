@@ -94,7 +94,6 @@
     transform: rotate(-16deg) translate(-50%, -50%) scaleY(0.75);
     top: 76%;
     left: 15%;
-    animation: gradient-ambient-bottom-left 1s ease infinite;
 }
 
 .decor-gradient[data-position="top-right"] {
@@ -120,5 +119,46 @@
 
     .form {
         gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    .decor-gradient[data-position="bottom-left"] {
+        left: 3%;
+    }
+
+    .decor-gradient[data-position="top-right"] {
+        left: 151%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .decor-gradient[data-position="bottom-left"] {
+        left: -13%;
+    }
+
+    .decor-gradient[data-position="top-right"] {
+        left: 191%;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .decor-gradient[data-position="bottom-left"] {
+        left: -23%;
+    }
+
+    .decor-gradient[data-position="top-right"] {
+        left: 211%;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .decor-gradient[data-position="bottom-left"] {
+        left: -65%;
+    }
+
+    .decor-gradient[data-position="top-right"] {
+        left: 276%;
+        top: -64%;
     }
 }
