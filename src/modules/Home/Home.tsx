@@ -11,6 +11,7 @@ import RoadMapSection from './components/RoadMapSection';
 import JoinWaitlistSection from './components/JoinWaitlistSection';
 import ScrollToTop from './components/ScrollToTop';
 import s from './Home.module.css';
+import Footer from '@/components/Footer';
 
 const Home: React.FC = () => {
     const { scrollYProgress } = useScroll();
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
                 <TeamSection />
                 <RoadMapSection />
                 <JoinWaitlistSection />
+                <Footer />
             </div>
             <ScrollToTop scrollProgress={scrollYProgress} />
         </>

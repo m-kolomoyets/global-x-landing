@@ -26,8 +26,8 @@
 .logo-wrap {
     width: 8.9375rem;
     height: 1.875rem;
-    transition: box-shadow 0.2s;
     border-radius: 0.25rem;
+    transition: box-shadow 0.2s;
 }
 
 .nav-list {

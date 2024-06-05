@@ -10,8 +10,7 @@ import {
 } from '@radix-ui/react-alert-dialog';
 import { useToggle } from '@react-hookz/web';
 import clsx from 'clsx';
-import { SUPPORT_EMAIL } from '@/constants';
-import { HEADER_NAV_LINKS } from '../constants';
+import { NAV_LINKS, SUPPORT_EMAIL } from '@/constants';
 import Button from '@/ui/Button';
 import Icon from '@/ui/Icon';
 import Link from '@/ui/Link';
@@ -49,7 +48,7 @@ const HeaderMobileDialog: React.FC = () => {
                     <div className={s.inner}>
                         <nav className={s.nav}>
                             <ul className={s['nav-list']}>
-                                {HEADER_NAV_LINKS.map((link) => {
+                                {NAV_LINKS.map((link) => {
                                     return (
                                         <Link className={s.item} key={link.href} variant="light" asChild>
                                             <a

@@ -16,3 +16,8 @@ export type WithChildren<TProps> = TProps & {
 };
 
 export type FCProps<TProps> = WithClassName<WithChildren<TProps>>;
+
+export type NavLinkItem = {
+    label: string;
+    href: string;
+};

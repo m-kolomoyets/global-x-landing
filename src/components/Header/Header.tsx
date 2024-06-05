@@ -3,7 +3,8 @@ import { useMediaQuery } from '@react-hookz/web';
 import { motion } from 'framer-motion';
 import useDetectScroll, { Direction } from '@smakss/react-scroll-direction';
 import clsx from 'clsx';
-import { HEADER_ANIMATION_VARIANTS, HEADER_NAV_LINKS, HEADER_SCROLL_FILL_THRESHOLD } from './constants';
+import { NAV_LINKS } from '@/constants';
+import { HEADER_ANIMATION_VARIANTS, HEADER_SCROLL_FILL_THRESHOLD } from './constants';
 import Container from '@/ui/Container';
 import Button from '@/ui/Button';
 import Link from '@/ui/Link';
@@ -56,7 +57,7 @@ const Header: React.FC = () => {
                     <>
                         <nav className={s.nav}>
                             <ul className={s['nav-list']}>
-                                {HEADER_NAV_LINKS.map((link) => {
+                                {NAV_LINKS.map((link) => {
                                     return (
                                         <Link className={s.item} key={link.href} variant="light" asChild>
                                             <a href={link.href}>{link.label}</a>
