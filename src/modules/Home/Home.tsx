@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <div className="full-height">
+            <div className="full-height" data-scroll data-scroll-speed="0.5">
                 <Header />
                 <HiroSection />
                 <div className={s['side-sections-wrap']}>

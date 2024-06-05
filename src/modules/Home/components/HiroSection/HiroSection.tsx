@@ -12,7 +12,7 @@ const HiroSection: React.FC = () => {
 
     return (
         <Container className={clsx(s.wrap, 'full-height')} asChild>
-            <section>
+            <section id="#hiro">
                 <div className={s.inner}>
                     <header className={s.header}>
                         <Typography className={s.title} variant="title-h1" asChild>

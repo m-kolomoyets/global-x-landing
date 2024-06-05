@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { LocomotiveScrollProvider } from '@/context/LocomotiveScrollContext';
 import '@/styles/index.css';
 
 // Import the generated route tree
@@ -20,9 +21,12 @@ declare module '@tanstack/react-router' {
 const rootElement = document.getElementById('root')!;
 if (!rootElement.innerHTML) {
     const root = ReactDOM.createRoot(rootElement);
+
     root.render(
         <StrictMode>
-            <RouterProvider router={router} />
+            <LocomotiveScrollProvider>
+                <RouterProvider router={router} />
+            </LocomotiveScrollProvider>
         </StrictMode>
     );
 }

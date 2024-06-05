@@ -8,8 +8,9 @@ import {
     Cancel as AlertDialogCancel,
     Title as AlertDialogTitle,
 } from '@radix-ui/react-alert-dialog';
-import { useToggle } from '@react-hookz/web';
+import { useToggle, useUpdateEffect } from '@react-hookz/web';
 import clsx from 'clsx';
+import useDocumentLockScrollY from '@/hooks/useDocumentLockScrollY';
 import { NAV_LINKS, SUPPORT_EMAIL } from '@/constants';
 import Button from '@/ui/Button';
 import Icon from '@/ui/Icon';
@@ -17,7 +18,13 @@ import Link from '@/ui/Link';
 import s from './HeaderMobileDialog.module.css';
 
 const HeaderMobileDialog: React.FC = () => {
+    const { lockDocumentScrollY, unlockDocumentScrollY } = useDocumentLockScrollY();
+
     const [isOpened, toggleIsOpened] = useToggle();
+
+    useUpdateEffect(() => {
+        isOpened ? lockDocumentScrollY() : unlockDocumentScrollY();
+    }, [isOpened]);
 
     return (
         <AlertDialogRoot open={isOpened} onOpenChange={toggleIsOpened}>
