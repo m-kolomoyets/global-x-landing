@@ -73,12 +73,14 @@
     isolation: isolate;
     z-index: -2;
     mix-blend-mode: lighten;
+    animation: gradient-idle 2s ease infinite;
 }
 
 .decor-gradient[data-position="bottom-left"] {
     transform: rotate(-25deg) translate(-50%, -50%) scaleY(0.75);
     top: 55%;
     left: 15%;
+    animation: gradient-ambient-bottom-left 1s ease infinite;
 }
 
 .decor-gradient[data-position="top-right"] {

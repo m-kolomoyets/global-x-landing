@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useEventListener, useToggle } from '@react-hookz/web';
 import type { ScrollToTopProps } from './types';
 import { useLocomotiveScrollContext } from '@/context/LocomotiveScrollContext';
+import { ONE_SECOND } from '@/constants';
 import Icon from '@/ui/Icon';
 import s from './ScrollToTop.module.css';
 
@@ -19,6 +20,10 @@ const ScrollToTop: React.FC<ScrollToTopProps> = ({ scrollProgress }) => {
         locomotiveScroll.scrollTo(0, {
             duration: 2,
         });
+
+        setTimeout(() => {
+            history.pushState(null, '', '#');
+        }, 2 * ONE_SECOND);
     }, [locomotiveScroll]);
 
     return (

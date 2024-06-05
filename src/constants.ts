@@ -11,6 +11,8 @@ export const LOCK_SCROLL_Y_CLASS_NAME = 'lock-scroll-y';
 
 export const SUPPORT_EMAIL = 'info@global-x.io';
 
+export const ONE_SECOND = 1_000;
+
 export const NAV_LINKS: NavLinkItem[] = [
     {
         label: 'Token Info',
@@ -20,9 +22,5 @@ export const NAV_LINKS: NavLinkItem[] = [
     {
         label: 'Lite Paper',
         href: '#',
-    },
-    {
-        label: 'Roadmap',
-        href: '#roadmap',
     },
 ];

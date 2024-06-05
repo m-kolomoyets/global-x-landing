@@ -8,6 +8,7 @@
     transition:
         padding 0.2s,
         background-color 0.2s;
+    animation: header-fade-in 0.5s;
 }
 
 .wrap[data-state="filled"] {
@@ -45,5 +46,15 @@
 @media screen and (max-width: 767px) {
     .wrap {
         padding-top: 2.75rem;
+    }
+}
+
+@keyframes header-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

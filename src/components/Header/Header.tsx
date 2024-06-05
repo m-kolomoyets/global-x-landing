@@ -11,10 +11,13 @@ import Link from '@/ui/Link';
 import Icon from '@/ui/Icon';
 import HeaderMobileDialog from './HeaderMobileDialog';
 import s from './Header.module.css';
+import { useLocomotiveScrollContext } from '@/context/LocomotiveScrollContext';
 
 const Header: React.FC = () => {
-    const isMobile = useMediaQuery('(max-width: 767px)');
+    const { locomotiveScroll } = useLocomotiveScrollContext();
+
     const { scrollDir, scrollPosition } = useDetectScroll();
+    const isMobile = useMediaQuery('(max-width: 767px)');
 
     const isHeaderHidden = scrollPosition.top > 0 && scrollDir === Direction.Down;
     const isHeaderShown =
@@ -70,6 +73,16 @@ const Header: React.FC = () => {
                                         </Link>
                                     );
                                 })}
+                                <Link className={s.item} variant="light" asChild>
+                                    <span
+                                        onClick={() => {
+                                            locomotiveScroll.scrollTo('#roadmap');
+                                            history.pushState(null, '', '#roadmap');
+                                        }}
+                                    >
+                                        Roadmap
+                                    </span>
+                                </Link>
                             </ul>
                         </nav>
                         <Button asChild>

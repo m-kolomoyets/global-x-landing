@@ -1,11 +1,14 @@
 import { memo } from 'react';
 import clsx from 'clsx';
+import { useLocomotiveScrollContext } from '@/context/LocomotiveScrollContext';
 import { NAV_LINKS, SUPPORT_EMAIL } from '@/constants';
 import Container from '@/ui/Container';
 import Link from '@/ui/Link';
 import s from './Footer.module.css';
 
 const Footer: React.FC = () => {
+    const { locomotiveScroll } = useLocomotiveScrollContext();
+
     return (
         <footer className={s.wrap}>
             <Container className={s.container}>
@@ -29,6 +32,16 @@ const Footer: React.FC = () => {
                                 </Link>
                             );
                         })}
+                        <Link className={s.item} variant="light" asChild>
+                            <span
+                                onClick={() => {
+                                    locomotiveScroll.scrollTo('#roadmap');
+                                    history.pushState(null, '', '#roadmap');
+                                }}
+                            >
+                                Roadmap
+                            </span>
+                        </Link>
                     </ul>
                     <span className={s.split} />
                     <Link className={s.email} variant="light" asChild>

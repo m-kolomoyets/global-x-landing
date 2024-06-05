@@ -10,6 +10,7 @@ import {
 } from '@radix-ui/react-alert-dialog';
 import { useToggle, useUpdateEffect } from '@react-hookz/web';
 import clsx from 'clsx';
+import { useLocomotiveScrollContext } from '@/context/LocomotiveScrollContext';
 import useDocumentLockScrollY from '@/hooks/useDocumentLockScrollY';
 import { NAV_LINKS, SUPPORT_EMAIL } from '@/constants';
 import Button from '@/ui/Button';
@@ -18,6 +19,8 @@ import Link from '@/ui/Link';
 import s from './HeaderMobileDialog.module.css';
 
 const HeaderMobileDialog: React.FC = () => {
+    const { locomotiveScroll } = useLocomotiveScrollContext();
+
     const { lockDocumentScrollY, unlockDocumentScrollY } = useDocumentLockScrollY();
 
     const [isOpened, toggleIsOpened] = useToggle();
@@ -69,6 +72,20 @@ const HeaderMobileDialog: React.FC = () => {
                                         </Link>
                                     );
                                 })}
+                                <Link className={s.item} variant="light" asChild>
+                                    <span
+                                        onClick={() => {
+                                            toggleIsOpened(false);
+
+                                            setTimeout(() => {
+                                                locomotiveScroll.scrollTo('#roadmap');
+                                                history.pushState(null, '', '#roadmap');
+                                            }, 400);
+                                        }}
+                                    >
+                                        Roadmap
+                                    </span>
+                                </Link>
                             </ul>
                         </nav>
                         <Button className={s.cta} asChild>
