@@ -8,7 +8,7 @@ import s from './RoadMapSection.module.css';
 const RoadMapSection: React.FC = () => {
     return (
         <Container className={s.wrap} size="sm" asChild>
-            <section>
+            <section id="roadmap">
                 <div className={s.left}>
                     <Typography className={s.title} variant="title-h2" asChild>
                         <h1>Roadmap to Financial Innovation</h1>

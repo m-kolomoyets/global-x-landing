@@ -13,6 +13,6 @@
 
 @media screen and (max-width: 767px) {
     .wrap {
-        padding-inline: 1rem;
+        padding-inline: 1rem !important;
     }
 }

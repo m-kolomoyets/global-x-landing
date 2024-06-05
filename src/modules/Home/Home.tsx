@@ -1,4 +1,5 @@
 import { useScroll } from 'framer-motion';
+import Header from '@/components/Header';
 import HiroSection from './components/HiroSection';
 import RevolutionizeFinancialExperienceSection from './components/RevolutionizeFinancialExperienceSection';
 import AllInOneFinancialEcosystemSection from './components/AllInOneFinancialEcosystemSection';
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
     return (
         <>
             <div className="full-height">
+                <Header />
                 <HiroSection />
                 <div className={s['side-sections-wrap']}>
                     <RevolutionizeFinancialExperienceSection />
