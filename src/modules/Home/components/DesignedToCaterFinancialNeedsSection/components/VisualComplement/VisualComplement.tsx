@@ -1,14 +1,14 @@
 import { memo } from 'react';
-import clsx from 'clsx';
-import Icon from '@/ui/Icon';
-import s from './VisualComplement.module.css';
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 import { VISUAL_COMPLEMENT_WRAP_VARIANTS } from '@/constants';
 import {
     VISUAL_COMPLEMENTS_ELEMENTS_ANIMATE,
     VISUAL_COMPLEMENT_ELEMENTS_INITIAL,
     VISUAL_COMPLEMENT_ELEMENTS_TRANSITION,
 } from './constants';
+import Icon from '@/ui/Icon';
+import s from './VisualComplement.module.css';
 
 const VisualComplement: React.FC = () => {
     return (

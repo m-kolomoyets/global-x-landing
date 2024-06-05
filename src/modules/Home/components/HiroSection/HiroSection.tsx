@@ -1,18 +1,18 @@
 import { memo } from 'react';
 import { useMediaQuery } from '@react-hookz/web';
-import clsx from 'clsx';
-import Typography from '@/ui/Typography';
-import Container from '@/ui/Container';
-import Button from '@/ui/Button';
-import Icon from '@/ui/Icon';
-import s from './HiroSection.module.css';
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 import {
     HIRO_SECTION_GRADIENTS_ANIMATION,
     HIRO_SECTION_GRADIENTS_TRANSITION,
     HIRO_SECTION_TITLES_ANIMATION,
     HIRO_SECTION_TITLES_TRANSITION,
 } from './constants';
+import Typography from '@/ui/Typography';
+import Container from '@/ui/Container';
+import Button from '@/ui/Button';
+import Icon from '@/ui/Icon';
+import s from './HiroSection.module.css';
 
 const HiroSection: React.FC = () => {
     const isMobile = useMediaQuery('(max-width: 767px)');

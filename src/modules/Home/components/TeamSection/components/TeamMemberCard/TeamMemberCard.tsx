@@ -8,6 +8,7 @@ import s from './TeamMemberCard.module.css';
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ className, name, avatarUrl, position, description }) => {
     const isMobile = useMediaQuery('(max-width: 767px)');
+
     const avatarFallbackLabel = useMemo(() => {
         const [firstName, lastName] = name.split(' ');
 

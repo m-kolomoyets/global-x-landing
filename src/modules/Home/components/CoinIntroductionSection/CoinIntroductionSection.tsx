@@ -1,11 +1,11 @@
 import { memo } from 'react';
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { COIN_ADVANTAGES } from './constants';
 import Typography from '@/ui/Typography';
 import Container from '@/ui/Container';
 import CoinAdvantageCard from './components/CoinAdvantageCard';
 import s from './CoinIntroductionSection.module.css';
-import { motion } from 'framer-motion';
 
 const CoinIntroductionSection: React.FC = () => {
     return (

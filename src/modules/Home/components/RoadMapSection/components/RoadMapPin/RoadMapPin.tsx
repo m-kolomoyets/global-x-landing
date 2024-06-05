@@ -1,18 +1,30 @@
 import { memo } from 'react';
+import { useMediaQuery } from '@react-hookz/web';
 import clsx from 'clsx';
 import type { RoadMapPinProps } from './types';
 import Typography from '@/ui/Typography';
 import Icon from '@/ui/Icon';
 import s from './RoadMapPin.module.css';
-import { useMediaQuery } from '@react-hookz/web';
 
-const RoadMapPin: React.FC<RoadMapPinProps> = ({ className, index, iconId, name, period, description }) => {
+const RoadMapPin: React.FC<RoadMapPinProps> = ({
+    className,
+    index,
+    iconId,
+    name,
+    period,
+    description,
+    isActive = false,
+}) => {
     const isMobile = useMediaQuery('(max-width: 767px)');
 
     const formattedIndex = index.toString().padStart(2, '0');
 
     return (
-        <li className={clsx(s.wrap, className)}>
+        <li
+            className={clsx(s.wrap, className, {
+                [s.active]: isActive,
+            })}
+        >
             <div className={s['icon-wrap']}>
                 <Icon className={s.icon} id={iconId} />
             </div>

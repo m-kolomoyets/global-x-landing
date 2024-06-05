@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import SideTitleSection from '../SideTitleSection';
-import s from './RevolutionizeFinancialExperienceSection.module.css';
 import VisualComplement from './components/VisualComplement';
+import s from './RevolutionizeFinancialExperienceSection.module.css';
 
 const RevolutionizeFinancialExperienceSection: React.FC = () => {
     return (

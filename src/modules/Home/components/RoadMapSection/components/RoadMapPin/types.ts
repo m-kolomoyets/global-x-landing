@@ -7,6 +7,7 @@ export type RoadMapPinItem = {
     name: string;
     period: string;
     description: React.ReactNode;
+    isActive?: boolean;
 };
 
 export type RoadMapPinProps = WithClassName<RoadMapPinItem>;

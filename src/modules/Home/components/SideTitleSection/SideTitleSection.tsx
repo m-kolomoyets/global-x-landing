@@ -1,10 +1,10 @@
 import { memo } from 'react';
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import type { SideTitleSectionProps } from './types';
 import Typography from '@/ui/Typography';
 import Container from '@/ui/Container';
 import s from './SideTitleSection.module.css';
-import { motion } from 'framer-motion';
 
 const SideTitleSection: React.FC<SideTitleSectionProps> = ({
     className,

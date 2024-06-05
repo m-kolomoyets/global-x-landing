@@ -10,8 +10,8 @@ import TeamSection from './components/TeamSection';
 import RoadMapSection from './components/RoadMapSection';
 import JoinWaitlistSection from './components/JoinWaitlistSection';
 import ScrollToTop from './components/ScrollToTop';
-import s from './Home.module.css';
 import Footer from '@/components/Footer';
+import s from './Home.module.css';
 
 const Home: React.FC = () => {
     const { scrollYProgress } = useScroll();

@@ -1,10 +1,10 @@
 import { memo } from 'react';
+import { motion } from 'framer-motion';
 import { TEAM_MEMBERS } from './constants';
 import Typography from '@/ui/Typography';
 import Container from '@/ui/Container';
 import TeamMemberCard from './components/TeamMemberCard';
 import s from './TeamSection.module.css';
-import { motion } from 'framer-motion';
 
 const TeamSection: React.FC = () => {
     return (

@@ -1,9 +1,15 @@
 .wrap {
     --icon-wrap-size: 3rem;
 
+    position: relative;
     display: flex;
     gap: 1.625rem;
-    position: relative;
+    opacity: 0.4;
+    transition: opacity 0.75s;
+}
+
+.wrap.active {
+    opacity: 1;
 }
 
 .icon-wrap {
