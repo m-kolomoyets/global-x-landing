@@ -1,7 +1,7 @@
 import { TargetAndTransition, Transition } from 'framer-motion';
 
 export const HIRO_SECTION_GRADIENTS_ANIMATION: TargetAndTransition = {
-    opacity: [0.65, 1, 0.65],
+    opacity: [0.5, 1, 0.5],
 };
 
 export const HIRO_SECTION_TITLES_ANIMATION: TargetAndTransition = {
